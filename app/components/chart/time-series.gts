@@ -1,5 +1,6 @@
 import Component from '@glimmer/component';
 import HighCharts from 'ember-highcharts/components/high-charts';
+import highcharts from 'winds-mobi-client-web/modifiers/highcharts';
 
 export interface TimeSeriesSignature {
   Args: {
@@ -96,7 +97,19 @@ export default class TimeSeries extends Component<TimeSeriesSignature> {
     };
   }
 
+  get mix() {
+    return {
+      ...this.mergedChartOptions,
+      series: this.args.chartData,
+    };
+  }
+
   <template>
+    {{log this.mix}}
+    <div {{highcharts this.mix}}>
+      hello
+    </div>
+
     <HighCharts
       @mode='StockChart'
       @content={{this.args.chartData}}

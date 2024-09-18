@@ -216,6 +216,9 @@ importers:
       eslint-plugin-qunit:
         specifier: ^8.1.1
         version: 8.1.1(eslint@8.57.0)
+      highcharts:
+        specifier: ^11.4.8
+        version: 11.4.8
       leaflet:
         specifier: ^1.9.4
         version: 1.9.4
