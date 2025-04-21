@@ -1,3 +1,7 @@
+# Repository moved
+
+- Project has been oficially adopted by the winds.mobi and lives now in [winds-mobi/winds-mobi-client-web](https://github.com/winds-mobi/winds-mobi-client-web).
+
 # winds-mobi-client-web
 
 This is an experimental project intending to replace the [winds.mobi js client](https://winds.mobi).
